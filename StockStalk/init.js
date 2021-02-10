@@ -1,0 +1,2 @@
+const BASE_URL = STOCK_CHART_DATA_BASE_URL;
+methodVal = "GET";

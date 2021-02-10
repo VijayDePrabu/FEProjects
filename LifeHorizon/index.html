@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Horizon</title>
+    <script src="..\base\constants.js"></script>
+    <script src="init.js"></script>
+    <script src="..\base\api_fetch.js"></script>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="p-4 text-center">
+    <p class="mb-0"><h1>Life Horizon<h1></p>
+    <h4><i>The City where you want to Settle</i></h4>
+  </div>
+  <div class="pt-2 px-4">
+  <span id="f" style="font-weight:bold;color:rgb(142, 105, 202)"><h5>Choose how you prefer</h5></span>
+</div>
+    <div class="slidecontainer px-5">
+        <span id="f" style="font-weight:bold;color:rgba(255, 0, 170, 0.603)">climate</span>
+        <input type="range" min="0" max="100" value="0" step="10" class="slider-color" id="climate">
+        <br>
+        <span id="f" style="font-weight:bold;color:rgb(69, 41, 121)">costOfLiving</span>
+
+        <input type="range" min="0" max="100" value="0" step="10" class="slider-color" id="costOfLiving">
+        <br>
+        <span id="f" style="font-weight:bold;color:rgba(30, 105, 99, 0.514)">medicinalFacilities</span>
+
+        <input type="range" min="0" max="100" value="0" step="10" class="slider-color" id="medicinalFacilities">
+        <br>
+        <span id="f" style="font-weight:bold;color:rgb(17, 172, 43)">nightLife</span>
+        <input type="range" min="0" max="100" value="0" step="10" class="slider-color" id="nightLife">
+        <br>
+        <span id="f" style="font-weight:bold;color:rgb(187, 127, 17)">jobOppurtunities</span>
+        <input type="range" min="0" max="100" value="0" step="10" class="slider-color" id="jobOppurtunities">
+       
+        <div class="d-flex justify-content-end pt-4">
+          <button type="button" class="btn btn-primary btn-lg align-self-end mr-3" id="load1" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Processing Order">Process</button>
+
+            </div>
+      </div>
+      <div class="footer">
+        <div class="progress" style="height: 50px;">
+            <div id="city1" class="progress-bar progress-bar-success progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+          <div class="progress" style="height: 40px;">
+            <div id="city2" class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+          <div class="progress" style="height: 35px;">
+            <div id="city3" class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+          <div class="progress" style="height: 30px;">
+            <div id="city4" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+          <div class="progress" style="height: 25px;">
+            <div id="city5" class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+      </div>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
