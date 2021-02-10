@@ -1,0 +1,2 @@
+const BASE_URL = WEATHER_GEOLOCATION_API;
+methodVal = "GET";
