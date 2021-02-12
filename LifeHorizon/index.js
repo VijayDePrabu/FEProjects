@@ -213,6 +213,15 @@ function setProgress(percent1,percent2, percent3, percent4, percent5){
         bar.className = "bar bar-warning";
         */
 }
-
+bar1.addEventListener('click', function(event) {
+  fetchAPIData(BASE_URL.replace("{city_name}",Object.values(sortedArray[0])[0]) + param1)
+  .then(data => {
+    console.log(data); // JSON data parsed by `data.json()` call
+  //  document.getElementById("searchResults").innerHTML = "Address: "+data;
+  });
+ // event.target.value = 'process';
+ 
+},
+false);
 
 
