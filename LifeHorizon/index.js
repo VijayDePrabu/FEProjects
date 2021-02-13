@@ -218,7 +218,7 @@ function setProgress(percent1, percent2, percent3, percent4, percent5) {
     if (Object.values(sortedArray[i])[0]) {
       progressBar[i].addEventListener('click', function () {
 
-        fetchAPIData(BASE_URL.replace("{city_name}", Object.values(sortedArray[i])[0]))
+        fetchAPIData(BASE_URL.replace("{city_name}", Object.values(sortedArray[i])[0])+"&locationbias=point:20.5937,78.9629")
           .then(data => {
 
             if (data.status === "OK") {
