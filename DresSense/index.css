@@ -1,0 +1,18 @@
+#dressChart {
+    display: block;
+    width:100%;
+    height: auto;
+    min-height: 300px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+  }
+
+  body {
+    margin: auto;
+    } 
+
+    .card-horizontal {
+      display: flex;
+      flex: 1 1 auto;
+    }
