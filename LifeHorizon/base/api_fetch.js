@@ -5,10 +5,10 @@ async function fetchAPIData(url = '', data = {}) {
   try {
     let response = '';
     if (methodVal === 'GET') {
-      response = await fetch(url);
+      response = await fetch(useProxy?proxy_url+url:url);
     } else {
       // Default options are marked with *
-      response = await fetch(URL+ methodValue === 'POST'? "": (param1+""),{method: methodValue, body: JSON.stringify(data), header: {
+      response = await fetch(URL+ methodVal === 'POST'? "": (param1+""),{method: methodVal, body: JSON.stringify(data), header: {
         "Content-type": "application/json; charset=UTF-8",
       },});
     }
@@ -18,6 +18,10 @@ async function fetchAPIData(url = '', data = {}) {
     return error; // parses JSON response into native JavaScript objects
   }
 }
+
+
+
+
 
 
 
