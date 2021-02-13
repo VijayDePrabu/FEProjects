@@ -5,12 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DresSense</title>
-    <script src="..\base\constants.js"></script>
+    <script src="base\constants.js"></script>
     <script src="init.js"></script>
-    <script src="..\base\api_fetch.js"></script>
-</head>
+    <script src="base\api_fetch.js"></script>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></head>
 <body>
-    <script src="index.js"></script>
+<script src="index.js"></script>
+<div class="container">
+  
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title"><h3>DresSense</h3></h4>
+      <h6 class="card-subtitle text-muted">let's dress sensily</h6>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+
+<div class="p-4 text-center">
+  <div  class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Choose category
+    </button>
+    <div id="tableMenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Dress for jogging</a>
+      <a class="dropdown-item" href="#">Kids</a>
+      <a class="dropdown-item" href="#">Baby</a>
+      <a class="dropdown-item" href="#">Men - Semi Casual</a>
+    </div>
+  </div>
+
+<!--       <select name="dropdown" id="categorySelectBtn">
+        <option value="Dress for jogging">Dress for jogging</option>
+        <option value="Kids">Kids</option>
+        <option value="Baby">Baby</option>
+      </select> -->
+<img id="dressChart">
+<h5 id="advice"></h5>
+<div class="card">
+    <div class="card-horizontal">
+        <div class="img-square-wrapper">
+            <img class="" id="weather-icon"  width="100px" height="100px">
+        </div>
+        <div class="card-body">
+          <p id="weather-report" class="card-text"></p>
+          <p id="weather-report2" class="card-text"></p>
+        </div>
+    </div>
+    <div  class="card-footer">
+        <small id="updated-time" class="text-muted"></small>
+    </div>
+</div>
+
 
 </body>
 </html>
