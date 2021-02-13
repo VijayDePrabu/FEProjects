@@ -27,10 +27,10 @@ const STOCK_CHART_DATA_BASE_URL =  "https://sandbox.iexapis.com/stable/stock/twt
 const WEATHER_API_KEY = "eee5d0619d3cb02ed044cbe2e0d78ef3";
 
 // weather for geo location
-const WEATHER_GEOLOCATION_API = "http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid="+WEATHER_API_KEY;
+const WEATHER_GEOLOCATION_API = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid="+WEATHER_API_KEY;
 
-const WEATHER_ICON_BASE_URL = "http://openweathermap.org/img/w/{weather-icon}.png";
+const WEATHER_ICON_BASE_URL = "https://openweathermap.org/img/w/{weather-icon}.png";
 
 let methodVal = "GET";
 
-let useProxy = false;
+let useProxy = false
