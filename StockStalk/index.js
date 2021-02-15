@@ -71,7 +71,7 @@ submitButton.addEventListener("click", function() {
 
     
            cardTitle.innerHTML = data.companyName;
-           cardSubtitle.innerHTML = "LTP: <span class='text-success'>"+ data.latestPrice+"</span>";
+           cardSubtitle.innerHTML = "LTP: "+ (data.change>0? "<span class='text-success'>"+ data.latestPrice+"</span>":data.change<0?"<span class='text-danger'>"+ data.latestPrice+"</span>":data.latestPrice);
            cardText.innerHTML = "change: "+ data.change + " change %: "+ data.changePercent;
 
            cardExchange.innerHTML = data.primaryExchange;
